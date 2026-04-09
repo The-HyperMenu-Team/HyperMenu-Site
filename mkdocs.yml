@@ -1,0 +1,6 @@
+site_name: HyperMenu Docs
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Releases: releases.md
+  - Features: features.md
