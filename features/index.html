@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Features - HyperMenu Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">HyperMenu Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../installation/" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../releases/" class="nav-link">Releases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Features</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../releases/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#movement" class="nav-link">Movement ↔️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#esp" class="nav-link">ESP 👁️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#roles" class="nav-link">Roles 🎭</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ship" class="nav-link">Ship 🚀</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#chat" class="nav-link">Chat 💬</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#animations" class="nav-link">Animations 📽️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#host-only" class="nav-link">Host-Only 🔐</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#passive" class="nav-link">Passive 💤</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#modes" class="nav-link">Modes 💿</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#config" class="nav-link">Config 📃</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#settings" class="nav-link">Settings ⚙️</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#config-file" class="nav-link">Config File</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#other-relevant-features" class="nav-link">Other relevant features</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="movement">Movement ↔️</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fake Revive</td>
+<td>Allows you to walk through walls like a ghost</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>NoClip</td>
+<td>Allows you to walk through walls like a ghost</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Invert Controls</td>
+<td>Inverts movement from WASD keys / controller.</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Allows you to adjust player / ghost speed</td>
+<td>Slider</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="teleport">Teleport</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to Cursor</td>
+<td>Teleport by right-clicking with your cursor. Works best with the ZoomOut cheat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>to Player</td>
+<td>Teleport to a player's position by selecting them</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="esp">ESP 👁️</h2>
+<p>HyperMenu's ESP cheats are completely client-side, and thus undetectable by anticheat</p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>See Player Info</td>
+<td>See level, platform, and host status for all players through their nametag</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Roles</td>
+<td>See every player's role through their nametag</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Ghosts</td>
+<td>Allows you to see ghosts, protections, and ghost chat even if you are alive</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Shadows</td>
+<td>Removes all shadows, allowing you to see during blackouts and even through walls<br>Also, lets you see through spore clouds in the Fungle Jungle</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Reveal Votes</td>
+<td>Reveals votes as they are being cast rather than at the end of the meeting<br>Also, lets you see colored votes even if votes are set to anonymous</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Lobby Info</td>
+<td>?</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="camera">Camera</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zoom Out</td>
+<td>Allows you to zoom-out the player's camera using your mouse's scrollwheel</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Spectate</td>
+<td>Allows you to pick a player to spectate with your camera</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Freecam</td>
+<td>Allows you to freely move your camera around without also moving your player</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tracers">Tracers</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crewmates</td>
+<td>Shows tracer lines for alive crewmates (color: cyan)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Impostors</td>
+<td>Shows tracer lines for alive impostors (color: red)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Ghosts</td>
+<td>Shows tracer lines for ghosts (color: white)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Dead Bodies</td>
+<td>Shows tracer lines for dead bodies on the ground (color: yellow)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Color-based</td>
+<td>Changes the color of tracer lines to the color of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Distance-based</td>
+<td>Changes the color of tracer lines based on the distance of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimap">Minimap</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crewmates</td>
+<td>Changes the map so that it shows the position of every alive crewmate (color: cyan)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Impostors</td>
+<td>Changes the map so that it shows the position of every alive impostor (color: red)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Ghosts</td>
+<td>Changes the map so that it shows the position of every ghost (color: white)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Color-based</td>
+<td>Changes the color of map icons to the color of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="roles">Roles 🎭</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set Fake Role</td>
+<td>Change your current role to any role you want<br>(Shapeshifter &amp; Phantom are disabled by default to prevent getting detected by the anticheat)</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="impostor">Impostor</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kill Reach</td>
+<td>Allows you to kill players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="shapeshifter">Shapeshifter</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Ss Animation</td>
+<td>Removes the shapeshift animation, making shapeshifting much quicker</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Endless Ss Duration</td>
+<td>Allows you to remain shapeshifted forever</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="crewmate">Crewmate</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show Tasks Menu</td>
+<td>Show menu to complete tasks and see other players' tasks</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tracker">Tracker</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Tracking</td>
+<td>Allows you to track another player forever</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Track Delay</td>
+<td>Removes the short delay between the tracked player and their icon on your tracker map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Track Cooldown</td>
+<td>Removes the cooldown period after tracking someone</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Track Reach</td>
+<td>Allows you to track players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="engineer">Engineer</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Vent Time</td>
+<td>Allows you to remain inside a vent forever despite being an engineer</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Vent Cooldown</td>
+<td>Removes the cooldown period after coming out of a vent</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="scientist">Scientist</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Battery</td>
+<td>The battery on your vitals panel will never run out</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Vitals Cooldown</td>
+<td>Removes the cooldown period after closing vitals panel</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detective">Detective</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interrogate Reach</td>
+<td>Allows you to interrogate players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ship">Ship 🚀</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fake Tasks</td>
+<td>Allow user to do literally any task</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Unfixable Lights</td>
+<td>Disables lights completely (they cannot be fixed manually by players)<br>You can enable them again by clicking the button</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Call Meeting</td>
+<td>Call an emergency meeting</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Report Body</td>
+<td>Report any player as a dead body to start a meeting</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Close Meeting</td>
+<td>Forcefully closes the meeting window (only for you), allowing you to move and interact with the game during meetings</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Auto open doors on use</td>
+<td>Automatically open doors when clicked</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kick offensive names</td>
+<td>Automatically kick people with offensive names (and auser)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sabotage">Sabotage</h4>
+<p>HyperMenu's Sabotage cheats work even if you aren't impostor and are subject to no cooldown.</p>
+<p>Moreover, different sabotages can be enabled at the same time, and they even work during meetings.</p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reactor</td>
+<td>Allows you to enable/disable Reactor sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Oxygen</td>
+<td>Allows you to enable/disable Oxygen sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Lights</td>
+<td>Allows you to enable/disable Lights sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Comms</td>
+<td>Allows you to enable/disable Communications sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Doors</td>
+<td>Opens a menu which allows you to open/close doors individually</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Mushroom Mixup</td>
+<td>Induces Mushroom Mixup sabotage on Fungle map</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Trigger Spores</td>
+<td>Induces spores on Fungle map</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Open Sabotage Map</td>
+<td>Opens sabotage map as if you are the Impostor</td>
+<td>Button</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vents">Vents</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unlock Vents</td>
+<td>Allows you to use vents even if you are not an impostor or an engineer</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kick All from Vents</td>
+<td>Forcefully kicks all players from vents</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Walk in Vents</td>
+<td>Allows you to move and interact with the game even though you are inside of a vent<br>This gives you a sort of invisibility until you disable the setting and leave the vent<br>(<em>Some activites such as killing will forcefully make you visible again</em>)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chat">Chat 💬</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable Chat</td>
+<td>Allow chat at all times during the game (example: alive outside meeting)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Bypass URL Block</td>
+<td>Allow users to put URLs in the chat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Lower rate limits</td>
+<td>Lower the cooldown on chat messages</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="textbox">Textbox</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unlock Extra Characters</td>
+<td>Allow typing symbols that the chat usually blocks</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Allow longer messages</td>
+<td>Increase character limit in message from 100 to 120</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Unlock Clipboard</td>
+<td>Allow Copy &amp; Paste in the chat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="animations">Animations 📽️</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shields</td>
+<td>Trigger shields animation</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Asteroids</td>
+<td>Toggle asteroids animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Empty Garbage</td>
+<td>Trigger empty garbage animation</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Medbay Scan</td>
+<td>Toggle medbay animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Cams In Use</td>
+<td>Toggle faking cameras in use</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="client-side">Client-Side</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moonwalk</td>
+<td>Toggle client-sided moonwalk animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="host-only">Host-Only 🔐</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bypass Host Only ⚠️</td>
+<td>Allow using host-only features as non-host (WARNING: this will get you kicked by anticheat. Use at your own risk.)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kill while Vanished</td>
+<td>Allows you to kill as phantom while vanished</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kill Anyone</td>
+<td>Allows you to kill anyone (even other impostors)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Kill Cooldown</td>
+<td>Removes kill cooldown</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Show Protect Menu</td>
+<td>Show a menu to protect other players</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="murder">Murder</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kill Player</td>
+<td>Select a player to kill them immediatly</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Telekill Player</td>
+<td>Select a player to teleport to them then kill them</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill All Crewmates</td>
+<td>Kill all crewmates immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill All Impostors</td>
+<td>Kill all impostors immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill Everyone</td>
+<td>Kill all players immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="game-state">Game State</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Force Start Game</td>
+<td>Force game to immediately start</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>No Game End</td>
+<td>Prevent game from ending</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="meetings">Meetings</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skip Meeting</td>
+<td>End meeting and eject no one due to tie</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Vote Immune</td>
+<td>Prevent yourself from being voted out</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Eject Player</td>
+<td>Select a player to be ejected, this player will be voted out.</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="passive">Passive 💤</h2>
+<p>These cheats are constantly running in the background and <strong>cannot be disabled to avoid problems.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free Cosmetics</td>
+<td>Gives you access to all of the game's cosmetics for free, including:<br><br>- Hats<br>- Visors<br>- Skins<br>- Pets<br>- Nameplates<br>- Bundles<br>- Cosmicubes</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Avoid Penalties</td>
+<td>Removes the penalty you receive when disconnecting from games early</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Unlock Extra Features</td>
+<td>Unlocks many of the game's special features automatically, including:<br><br>- Freechat<br>- Friend list<br>- Custom name<br>- Online gameplay</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Copy Lobby Code on Disconnect</td>
+<td>Copies the lobby code to clipboard when you disconnect (including being kicked)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Spoof Date to April 1st</td>
+<td>Forces the april fools update</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modes">Modes 💿</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RGB Mode</td>
+<td>RGB GUI</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Stealth Mode</td>
+<td>Minimize risk of being kicked by anticheat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Panic Mode</td>
+<td>Kill HyperMenu and restore normal Among Us GUI</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="config">Config 📃</h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reload Config</td>
+<td>Reload config file</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Save to Profile</td>
+<td>Save HyperMenu profile</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Load from Profile</td>
+<td>Load HyperMenu Profile</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="settings">Settings ⚙️</h2>
+<h4 id="gui-settings">GUI Settings</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu Keybind</td>
+<td>Change Menu Keybind</td>
+<td>Text Entry</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>Menu Color (HTML)</td>
+<td>Set menu color (use hex color code such as #FF0000)</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+<tr>
+<td>Open Menu on Mouse Position</td>
+<td>Open the menu on the position of your mouse when you press delete</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Auto-Load Profile on Startup</td>
+<td>Automatically load the HyperMenu profile when you start Among Us</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="spoofing-settings">Spoofing Settings</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spoof Level</td>
+<td>Spoof your player level for other players (from 1 to 100000)</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+<tr>
+<td>Spoof Platform</td>
+<td>Spoof player platform. Use one from this <a href="https://skeld.js.org/enums/constant.Platform.html">list</a>.</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="privacy-settings">Privacy Settings</h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide Device ID</td>
+<td>Toggle hardware ban prevention</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Disable Telemetry</td>
+<td>Prevent Among Us from collecting data from your game</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+</tbody>
+</table>
+<h2 id="config-file">Config File</h2>
+<p>You can change all of the following settings in <code>BepInEx/config/HyperMenu.cfg</code></p>
+<table>
+<thead>
+<tr>
+<th>Config</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GuestMode.GuestMode</td>
+<td>When enabled, a new guest account will generate every time you start the game<br><br>Allows you to bypass account bans and PUID detection</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>GuestMode.FriendName</td>
+<td>The username that will be used when setting a friend code for your guest account<br><br><strong>IMPORTANT</strong>: <br>- Can only be used with GuestMode<br>- Needs to be ≤ 10 characters<br>- Cannot include special characters/discriminator (#1234)</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>GUI.Keybind</td>
+<td>Specifies the keyboard key that toggles the GUI on/off<br><br><strong>IMPORTANT</strong>: You may only use keycodes from this <a href="https://docs.unity3d.com/Packages/com.unity.tiny@0.16/api/Unity.Tiny.Input.KeyCode.html">list</a></td>
+<td>String</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>GUI.Color</td>
+<td>Sets the color of HyperMenu's GUI using HTML color codes</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Privacy.HideDeviceId</td>
+<td>When enabled, it will hide your unique deviceId from Among Us<br><br>Could <strong>potentially</strong> help bypass hardware bans in the future</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>Privacy.NoTelemetry</td>
+<td>When enabled, it will stop Among Us from collecting analytics of your games using Unity Analytics and sending them to Innersloth</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>Spoofing.Level</td>
+<td>Sets a custom player level to display to others in online games, masking your real level<br><br><strong>IMPORTANT</strong>: Only integers between 0 and 4294967295 are valid. Decimal values are not accepted</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Spoofing.Platform</td>
+<td>Sets a different gaming platform in online lobbies to disguise your actual platform<br><br><strong>IMPORTANT</strong>: You may only use platform names from this <a href="https://skeld.js.org/enums/constant.Platform.html">list</a></td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-relevant-features">Other relevant features</h2>
+<ul>
+<li>HyperMenu has a simple <strong>GUI</strong> that is easy to navigate and can be toggled using the <strong>DELETE</strong> key on your keyboard</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
